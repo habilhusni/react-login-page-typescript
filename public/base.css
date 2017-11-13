@@ -1,6 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html * {
+  outline: none !important;
 }
 
 .container-mobile {
@@ -46,6 +51,231 @@
   border-radius: 2px;
   background-color: #fafafa;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24);
-  margin-right: -15px;
-  margin-left: 0px;
 }
+
+.top-15 {
+  top: 15px;
+}
+
+.mtop16 {
+  margin-top: 16px !important;
+}
+
+.mtop14 {
+  margin-top: 14px !important;
+}
+
+.login-label {
+  margin-top: 10px !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.no-pleft {
+  padding-left: 0px !important;
+}
+
+.mleft0 {
+  margin-left: 0px !important;
+}
+
+.color-grey-2 {
+  color: #656D78;
+}
+
+.mtop34 {
+  margin-top: 34px !important;
+}
+
+.width-80persen {
+  width: 80% !important;
+}
+
+.login-lanjut-btn {
+  height: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 3px;
+  border: none;
+}
+
+.btn-block {
+  display: block;
+}
+
+.primary-white {
+  color: #ffffff !important;
+}
+
+.btn-login-registration {
+  width: 100%;
+  height: 36px;
+  border-radius: 2px;
+  background-color: #4caf50;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.bg-color-white {
+  background-color: #ffffff !important;
+}
+
+/**
+   * MUI Textfield Component
+   */
+   .mui-textfield {
+    display: block;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    position: relative; }
+    .mui-textfield > label {
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 100%;
+      color: rgba(0, 0, 0, 0.54);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15px;
+      overflow-y: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .mui-textfield > textarea {
+      padding-top: 5px; }
+    .mui-textfield > input,
+    .mui-textfield > textarea {
+      display: block; }
+      .mui-textfield > input:focus ~ label,
+      .mui-textfield > textarea:focus ~ label {
+        color: #0781D0; }
+
+  .mui-textfield--float-label > label {
+    position: absolute;
+    transform: translate(0px, 15px);
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.26);
+    text-overflow: clip;
+    cursor: text;
+    pointer-events: none; }
+  .mui-textfield--float-label > input:focus ~ label,
+  .mui-textfield--float-label > textarea:focus ~ label {
+    transform: translate(0px, 0px);
+    font-size: 12px;
+    line-height: 15px;
+    text-overflow: ellipsis; }
+  .mui-textfield--float-label > input:not(:focus).mui--is-not-empty ~ label, .mui-textfield--float-label > input:not(:focus)[value]:not([value=""]):not(.mui--is-empty):not(.mui--is-not-empty) ~ label, .mui-textfield--float-label > input:not(:focus):not(:empty):not(.mui--is-empty):not(.mui--is-not-empty) ~ label,
+  .mui-textfield--float-label > textarea:not(:focus).mui--is-not-empty ~ label,
+  .mui-textfield--float-label > textarea:not(:focus)[value]:not([value=""]):not(.mui--is-empty):not(.mui--is-not-empty) ~ label,
+  .mui-textfield--float-label > textarea:not(:focus):not(:empty):not(.mui--is-empty):not(.mui--is-not-empty) ~ label {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    line-height: 15px;
+    transform: translate(0px, 0px);
+    text-overflow: ellipsis; }
+
+  .mui-textfield--wrap-label {
+    display: table;
+    width: 100%;
+    padding-top: 0px; }
+    .mui-textfield--wrap-label:not(.mui-textfield--float-label) > label {
+      display: table-header-group;
+      position: static;
+      white-space: normal;
+      overflow-x: visible; }
+
+  .mui-textfield > input,
+  .mui-textfield > textarea {
+    animation-duration: 0.0001s;
+    animation-name: mui-node-inserted;
+    display: block;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.87);
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0px;
+    background-image: none; }
+    .mui-textfield > input:focus,
+    .mui-textfield > textarea:focus {
+      border-color: #0781D0;
+      border-width: 2px; }
+    .mui-textfield > input:disabled, .mui-textfield > input:read-only,
+    .mui-textfield > textarea:disabled,
+    .mui-textfield > textarea:read-only {
+      cursor: not-allowed;
+      background-color: transparent;
+      opacity: 1; }
+    .mui-textfield > input::placeholder,
+    .mui-textfield > textarea::placeholder {
+      color: rgba(0, 0, 0, 0.26);
+      opacity: 1; }
+
+  .mui-textfield > input {
+    height: 32px; }
+    .mui-textfield > input:focus {
+      height: 33px;
+      margin-bottom: -1px; }
+
+  .mui-textfield > textarea {
+    min-height: 64px; }
+    .mui-textfield > textarea[rows]:not([rows="2"]):focus {
+      margin-bottom: -1px; }
+
+  .mui-textfield > input:focus {
+    height: 33px;
+    margin-bottom: -1px; }
+
+  .mui-textfield > input:invalid:not(:focus):not(:required), .mui-textfield > input:invalid:not(:focus):required.mui--is-not-empty, .mui-textfield > input:invalid:not(:focus):required.mui--is-empty.mui--is-dirty, .mui-textfield > input:invalid:not(:focus):required[value]:not([value=""]):not(.mui--is-empty):not(.mui--is-not-empty), .mui-textfield > input:invalid:not(:focus):required:not(:empty):not(.mui--is-empty):not(.mui--is-not-empty),
+  .mui-textfield > textarea:invalid:not(:focus):not(:required),
+  .mui-textfield > textarea:invalid:not(:focus):required.mui--is-not-empty,
+  .mui-textfield > textarea:invalid:not(:focus):required.mui--is-empty.mui--is-dirty,
+  .mui-textfield > textarea:invalid:not(:focus):required[value]:not([value=""]):not(.mui--is-empty):not(.mui--is-not-empty),
+  .mui-textfield > textarea:invalid:not(:focus):required:not(:empty):not(.mui--is-empty):not(.mui--is-not-empty),
+  .mui-textfield > input:not(:focus).mui--is-invalid:not(:required),
+  .mui-textfield > input:not(:focus).mui--is-invalid:required.mui--is-not-empty,
+  .mui-textfield > input:not(:focus).mui--is-invalid:required.mui--is-empty.mui--is-dirty,
+  .mui-textfield > input:not(:focus).mui--is-invalid:required[value]:not([value=""]):not(.mui--is-empty):not(.mui--is-not-empty),
+  .mui-textfield > input:not(:focus).mui--is-invalid:required:not(:empty):not(.mui--is-empty):not(.mui--is-not-empty),
+  .mui-textfield > textarea:not(:focus).mui--is-invalid:not(:required),
+  .mui-textfield > textarea:not(:focus).mui--is-invalid:required.mui--is-not-empty,
+  .mui-textfield > textarea:not(:focus).mui--is-invalid:required.mui--is-empty.mui--is-dirty,
+  .mui-textfield > textarea:not(:focus).mui--is-invalid:required[value]:not([value=""]):not(.mui--is-empty):not(.mui--is-not-empty),
+  .mui-textfield > textarea:not(:focus).mui--is-invalid:required:not(:empty):not(.mui--is-empty):not(.mui--is-not-empty) {
+    border-color: #ED212E;
+    border-width: 2px; }
+
+  .mui-textfield > input:invalid:not(:focus):not(:required), .mui-textfield > input:invalid:not(:focus):required.mui--is-not-empty, .mui-textfield > input:invalid:not(:focus):required.mui--is-empty.mui--is-dirty, .mui-textfield > input:invalid:not(:focus):required[value]:not([value=""]):not(.mui--is-empty):not(.mui--is-not-empty), .mui-textfield > input:invalid:not(:focus):required:not(:empty):not(.mui--is-empty):not(.mui--is-not-empty),
+  .mui-textfield > input:not(:focus).mui--is-invalid:not(:required),
+  .mui-textfield > input:not(:focus).mui--is-invalid:required.mui--is-not-empty,
+  .mui-textfield > input:not(:focus).mui--is-invalid:required.mui--is-empty.mui--is-dirty,
+  .mui-textfield > input:not(:focus).mui--is-invalid:required[value]:not([value=""]):not(.mui--is-empty):not(.mui--is-not-empty),
+  .mui-textfield > input:not(:focus).mui--is-invalid:required:not(:empty):not(.mui--is-empty):not(.mui--is-not-empty) {
+    height: 33px;
+    margin-bottom: -1px; }
+
+  .mui-textfield > input:invalid:not(:focus):not(:required) ~ label, .mui-textfield > input:invalid:not(:focus):required.mui--is-not-empty ~ label, .mui-textfield > input:invalid:not(:focus):required[value]:not([value=""]):not(.mui--is-empty):not(.mui--is-not-empty) ~ label, .mui-textfield > input:invalid:not(:focus):required:not(:empty):not(.mui--is-empty):not(.mui--is-not-empty) ~ label,
+  .mui-textfield > textarea:invalid:not(:focus):not(:required) ~ label,
+  .mui-textfield > textarea:invalid:not(:focus):required.mui--is-not-empty ~ label,
+  .mui-textfield > textarea:invalid:not(:focus):required[value]:not([value=""]):not(.mui--is-empty):not(.mui--is-not-empty) ~ label,
+  .mui-textfield > textarea:invalid:not(:focus):required:not(:empty):not(.mui--is-empty):not(.mui--is-not-empty) ~ label,
+  .mui-textfield > input:not(:focus).mui--is-invalid:not(:required) ~ label,
+  .mui-textfield > input:not(:focus).mui--is-invalid:required.mui--is-not-empty ~ label,
+  .mui-textfield > input:not(:focus).mui--is-invalid:required[value]:not([value=""]):not(.mui--is-empty):not(.mui--is-not-empty) ~ label,
+  .mui-textfield > input:not(:focus).mui--is-invalid:required:not(:empty):not(.mui--is-empty):not(.mui--is-not-empty) ~ label,
+  .mui-textfield > textarea:not(:focus).mui--is-invalid:not(:required) ~ label,
+  .mui-textfield > textarea:not(:focus).mui--is-invalid:required.mui--is-not-empty ~ label,
+  .mui-textfield > textarea:not(:focus).mui--is-invalid:required[value]:not([value=""]):not(.mui--is-empty):not(.mui--is-not-empty) ~ label,
+  .mui-textfield > textarea:not(:focus).mui--is-invalid:required:not(:empty):not(.mui--is-empty):not(.mui--is-not-empty) ~ label {
+    color: #ED212E; }
+
+  .mui-textfield:not(.mui-textfield--float-label) > input:invalid:not(:focus):required.mui--is-empty.mui--is-dirty ~ label,
+  .mui-textfield:not(.mui-textfield--float-label) > textarea:invalid:not(:focus):required.mui--is-empty.mui--is-dirty ~ label,
+  .mui-textfield:not(.mui-textfield--float-label) > input:not(:focus).mui--is-invalid:required.mui--is-empty.mui--is-dirty ~ label,
+  .mui-textfield:not(.mui-textfield--float-label) > textarea:not(:focus).mui--is-invalid:required.mui--is-empty.mui--is-dirty ~ label {
+    color: #ED212E; }

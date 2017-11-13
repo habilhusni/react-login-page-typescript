@@ -28,8 +28,22 @@ export class Hello extends React.Component<HelloProps, {}> {
             <p style={styles.textTitle}>
               Masukkan nomor HP atau email Anda untuk mulai menggunakan Kudo
             </p>
+            <form className='mtop34'>
+              <div className='input-box-login mui-row mleft0'>
+                <div className='mui-textfield mui-textfield--float-label'>
+                  <i className='top-15 material-icons color-grey-2 mtop16 mui-col-xs-2'>account_circle</i>
+                  <input id='email-field' name='email' type='text' className='mtop14 mui--is-empty mui--is-dirty width-80persen bg-color-white' />
+                  <label className='login-label mtop14 mui-col-xs-12 mui-col-xs-offset-2 mui-col-md-12 mui-col-md-offset-2 text-left no-pleft'>No. HP atau Email</label>
+                </div>
+              </div>
+
+              <button type='submit' id='btnSubmit' className='login-lanjut-btn btn-block primary-white btn-login-registration'>MULAI BERJUALAN</button>
+            </form>
+
           </div>
+
         </div>
+
       </div>
     )
   }
