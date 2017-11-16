@@ -36,15 +36,11 @@ export class Hello extends React.Component<HelloProps, {}> {
                   <label className='login-label mtop14 mui-col-xs-12 mui-col-xs-offset-2 mui-col-md-12 mui-col-md-offset-2 text-left no-pleft'>No. HP atau Email</label>
                 </div>
               </div>
-
               <button type='submit' id='btnSubmit' className='login-lanjut-btn btn-block primary-white btn-login-registration'>MULAI BERJUALAN</button>
             </form>
-
           </div>
-
         </div>
-
-      </div>
+      </div>  
     )
   }
 }
